@@ -12,10 +12,15 @@ h3{
   color: var(--color-text);
   font-weight: 400;
   text-align: center;
+  margin-inline: auto;
 }
 
 h1{
   font-size: var(--text-3xl);
+}
+
+h2 {
+  font-size: var(--text-2xl);
 }
 
 body{
@@ -47,3 +52,18 @@ body{
   width: 8px;
   height: 8px;
 }
+
+@keyframes swipe-down {
+
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  30% {
+    transform: translateY(10px);
+    opacity: 0.9;
+  }
+}
+

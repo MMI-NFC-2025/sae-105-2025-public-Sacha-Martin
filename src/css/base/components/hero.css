@@ -9,6 +9,28 @@
 
 .hero__title {
   margin-top: 74px;
+  width: 295px;
+  height: 92px;
 }
 
+.cta{
+  margin-top: 89px;
+}
 
+.swipe{
+  margin-top: 75px;
+  animation: swipe-down 1.5s ease-in-out infinite;
+}
+
+.swipe__text{
+  text-align: center;
+  width: 296px;
+  height: 70px;
+  text-shadow: 0 -1px 9.9px rgba(0, 0, 0, 0.86);
+}
+
+.swipe__arrow{
+  margin: 0 auto;
+  
+
+}
