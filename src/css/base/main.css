@@ -1,4 +1,12 @@
 @font-face {
   font-family: 'Super Dream';
-  src: url('assets/font/Super-Dream.woff') format('woff2');
+  src: url('/assets/font/Super-Dream.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3{
+  font-family: var(--font-title);
 }
