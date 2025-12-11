@@ -14,5 +14,5 @@
 @import "layout/section.css";
 
 /* Components */
-@import "url(base/components/menu.css)";
+@import "base/components/menu.css";
 @import "base/components/hero.css";
