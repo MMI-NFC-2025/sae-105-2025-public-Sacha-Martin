@@ -1,0 +1,25 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: var(--space-6xl);
+  padding: var(--space-6xl) var(--space-4xl);
+  color: var(--light);
+  background-color: var(--gray-800);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+    url("/assets/img/hero.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__intro {
+  font-size: var(--text-2xl);
+}
+
+.hero__title {
+  color: var(--light);
+}
+

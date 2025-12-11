@@ -1,0 +1,32 @@
+/* typographie */
+:root {
+  /* Mode 1 */
+  /* number */
+  --text-s: 0.6875rem;  
+  --text-m: 0.8125rem;
+  --text-l: 0.9375rem;
+  --text-3xl: 1.25rem;
+  --text-2xl: 1.875rem;
+  --text-xl: 2.5rem;
+}
+
+/* Spaces */
+:root {
+  /* Mode 1 */
+  /* number */
+  --space-card: 1.125rem;
+  --space-special: 2rem;
+  --space-basic: 2.5rem;
+  --space-left: 3.125rem;
+  --space-menu: 3.125rem;
+}
+
+/* couleur */
+:root {
+  /* Mode 1 */
+  /* color */
+  --color-base: #2d9caf;
+  --color-detail: #fbff24;
+  --color-primary: #7bcedc;
+  --color-text: #ffffff;
+}

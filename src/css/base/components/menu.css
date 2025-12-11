@@ -1,0 +1,149 @@
+.menu {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  color: var(--light);
+  display: flex;
+  gap: var(--space-5xl);
+  flex-direction: column;
+  padding: var(--space-4xl);
+}
+
+.menu::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background-color: var(--gray-900);
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu[hidden] {
+  visibility: hidden;
+}
+.menu[hidden]::before {
+  transform: translateY(-100vh);
+  transition-delay: 0.25s;
+}
+
+.menu__list,
+.menu__social-list,
+.menu__img {
+  position: relative;
+  z-index: 3;
+}
+
+.menu__list {
+  margin-top: 6rem;
+}
+
+.menu__item {
+  margin-bottom: var(--space-lg);
+}
+
+.menu__img {
+  border-radius: var(--space-md);
+}
+
+.menu__link {
+  color: var(--light);
+  text-decoration: none;
+  font-size: var(--text-2xl);
+}
+
+.menu__social-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.menu__social-link {
+  color: var(--gray-500);
+  text-decoration: none;
+}
+
+.menu__item,
+.menu__social-item,
+.menu__img {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.menu__item {
+  --i: 1;
+}
+.menu__item:nth-child(2) {
+  --i: 2;
+}
+.menu__item:nth-child(3) {
+  --i: 3;
+}
+.menu__item:nth-child(4),
+.menu__social-item:nth-child(1) {
+  --i: 4;
+}
+.menu__social-item:nth-child(2) {
+  --i: 5;
+}
+.menu__social-item:nth-child(3),
+.menu__img {
+  --i: 6;
+}
+
+.menu__item,
+.menu__social-item,
+.menu__img {
+  transition-delay: calc(var(--i) * 0.05s);
+}
+
+.menu[hidden] .menu__item,
+.menu[hidden] .menu__social-item,
+.menu[hidden] .menu__img {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+/* Bouton du menu */
+
+.menu-btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-btn__bar {
+  background: var(--dark);
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  border-radius: 2px;
+  left: 0;
+  z-index: 10;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-btn__bar--top {
+  bottom: 8px;
+}
+.menu-btn__bar--bottom {
+  top: 8px;
+}
+.menu-btn__bar--light {
+  background: var(--light);
+}
+
+.menu-btn[aria-expanded="true"] {
+  .menu-btn__bar--top {
+    transform-origin: 14px -2px;
+    transform: rotate(-135deg);
+    background: var(--light);
+  }
+  .menu-btn__bar--bottom {
+    transform-origin: 22px 4px;
+    transform: rotate(-45deg);
+    background: var(--light);
+  }
+}
