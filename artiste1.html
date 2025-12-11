@@ -97,121 +97,48 @@
     </header>
     <main>
         <div class="hero">
+            <button class="hero__back" onclick="history.back()">
+                <img class="back__arrow" src="assets/icons/arrow/arrow-back.svg" alt="bouton retour page précédente">
+            </button>
             <h1 class="hero__title">
-                Les Artistes
+                Ibrahim Maalouf
             </h1>
-            <h2 class="hero__subtitle">
-                Découvrez les artistes qui vont animer les rues de Montbéliard !
-                <div class="swipe">
-                    <h2 class="swipe__text">
-                        Découvrez les noms des artistes invités.
-                    </h2>
-                    <img class='swipe__arrow' src="assets/icons/arrow/fleche-bas.svg" alt="swip-up">
-                </div>
+            <p class="hero__little-subtitle">
+                Le Dimanche 28 Juin 2026<br>
+                Sur la scène Denfert-Rochereau
+            </p>
         </div>
-        <section class="section section_artist">
-            <h2 class="section__title">
-                La liste des artistes
-            </h2>
-            <div class="artist__filters">
-                <ul class="filters__wrapper">
-                    <li class="filters__form filter1">
-                        <input class="form__checkbox" type="checkbox" id="classique" name="music" value="classique">
-                        <label class="form__label" for="classique">Vendredi 26 Juin 2026</label>
-                    </li>
-                    <li class="filters__form filter2">
-                        <input class="form__checkbox" type="checkbox" id="classique" name="music" value="classique">
-                        <label  class="form__label" for="classique">Samedi 27 Juin 2026</label>
-                    </li>
-                    <li class="filters__form filter3">
-                        <input class="form__checkbox" type="checkbox" id="classique" name="music" value="classique">
-                        <label class="form__label" for="classique">Dimanche 28 Juin 2026</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="artist__list">
-                <div class="artist__card">
-                    <a class="artist__link" href="artiste1.html">
-                        <img class="artist_img" src="assets/img/artist/list-artist/ibrahim-maalouf.avif" alt="image Ibrahim Maalouf">
-                    </a>
-                    <span class="artist__name">
-                        Ibrahim Maalouf
-                    </span>
+        <section class="section section__description-artist">
+            <div class="description-artist__wrapper">
+                <img class="description-artist__img" src="assets/img/artist/list-artist/ibrahim-maalouf.avif"
+                    alt="image ibrahim-maalouf">
+                <div class="description-artist__text">
+                    <p class="text__date">
+                        Date de naissance<br>
+                        5 Novembre 1980
+                    </p>
+                    <p class="text__explain">
+                        <span class="text__highlight">Qui est Ibrahim Maalouf ?</span><br>
+                        Trompettiste, compositeur et producteur franco-libanais. Il joue de la trompette , mêlant
+                        jazz, musique classique, musiques du monde et sonorités orientales.
+                    </p>
                 </div>
-                <div class="artist__card">
-                    <img class="artist_img" src="assets/img/artist/list-artist/ozma.avif" alt="image Ibrahim Maalouf">
-                    <span class="artist__name">
-                        Ozma
-                    </span>
-                </div>
-                <div class="artist__card">
-                    <img class="artist_img" src="assets/img/artist/list-artist/abigoba.avif" alt="image Ibrahim Maalouf">
-                    <span class="artist__name">
-                        Abigoba
-                    </span>
-                </div>
-                <div class="artist__card">
-                    <img class="artist_img" src="assets/img/artist/list-artist/borruto.avif" alt="image Ibrahim Maalouf">
-                    <span class="artist__name">
-                        Borruto Family
-                    </span>
-                </div>
-                <div class="artist__card">
-                    <img class="artist_img" src="assets/img/artist/list-artist/fanfare5fantastique.avif" alt="image Ibrahim Maalouf">
-                    <span class="artist__name">
-                        Fanfare les 5 Fantastiques
-                    </span>
-                </div>
-                <div class="artist__card">
-                    <img class="artist_img" src="assets/img/artist/list-artist/batteriefanfare.avif" alt="image Ibrahim Maalouf">
-                    <span class="artist__name">
-                        Batterie Fanfare municipale de Mâcon
-                    </span>
-                </div>
-                <div class="artist__card">
-                    <img class="artist_img" src="assets/img/artist/list-artist/buck.avif" alt="image Ibrahim Maalouf">
-                    <span class="artist__name">
-                        Buck
-                    </span>
-                </div>
-                <div class="artist__card">
-                    <img class="artist_img" src="assets/img/artist/list-artist/wiho.avif" alt="image Ibrahim Maalouf">
-                    <span class="artist__name">
-                        Wiho & The Free Radical
-                    </span>
-                </div>
-                <div class="artist__card">
-                    <img class="artist_img" src="assets/img/artist/list-artist/cédille.avif" alt="image Ibrahim Maalouf">
-                    <span class="artist__name">
-                        La Cédille
-                    </span>
-                </div>
-                <div class="artist__card">
-                    <img class="artist_img" src="assets/img/artist/list-artist/emile parisien.avif" alt="image Ibrahim Maalouf">
-                    <span class="artist__name">
-                        Émile Parisien
-                    </span>
-                </div>
-                <div class="artist__card">
-                    <img class="artist_img" src="assets/img/artist/list-artist/mederic.avif" alt="image Ibrahim Maalouf">
-                    <span class="artist__name">
-                        Médéric Collignon
-                    </span>
-                </div>
-                <div class="artist__card">
-                    <img class="artist_img" src="assets/img/artist/list-artist/boulou.avif" alt="image Ibrahim Maalouf">
-                    <span class="artist__name">
-                        Boulou Ferré
-                    </span>
-                </div>
-                <div class="artist__card">
-                    <img class="artist_img" src="assets/img/artist/list-artist/louissclavis.avif" alt="image Ibrahim Maalouf">
-                    <span class="artist__name">
-                        Louis Sclavis
-                    </span>
+                <div class="description-artist__carousel">
+                    <div class="carousel__wrapper" src="assets/img/artist/ibrahim-maalouf2.avif">
+                            <h3 class="text__date">
+                                Date de naissance<br>
+                                5 Novembre 1980
+                            </h3>
+                            <p class="text__explain">
+                                <span class="text__highlight">Qui est Ibrahim Maalouf ?</span><br>
+                                Trompettiste, compositeur et producteur franco-libanais. Il joue de la trompette , mêlant
+                                jazz, musique classique, musiques du monde et sonorités orientales.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+
     </main>
     <footer class="footer">
         <div class="footer__newsletter">
