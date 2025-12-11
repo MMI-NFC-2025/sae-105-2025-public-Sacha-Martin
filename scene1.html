@@ -97,53 +97,45 @@
     </header>
     <main>
         <div class="hero">
+            <button class="hero__back" onclick="history.back()">
+                <img class="back__arrow" src="assets/icons/arrow/arrow-back.svg" alt="bouton retour page précédente">
+            </button>
             <h1 class="hero__title">
-                Les Scènes
+                La Place Saint-Martin
             </h1>
-            <h2 class="hero__subtitle">
-                Découvrez les scènes sur lesquelles les artistes vont briller !
-                <div class="swipe">
-                    <h2 class="swipe__text">
-                        Découvrez la localisation des scènes.
-                    </h2>
-                    <img class='swipe__arrow' src="assets/icons/arrow/fleche-bas.svg" alt="swip-up">
-                </div>
         </div>
-        <section class="section section__scene">
-            <h2 class="section__title">
-                La liste des scènes
-            </h2>
-            <div class="prog__show show--1">
-                
+        <section class="section section__description-scene">
+            <div class="description-scene__wrapper">
+                <img class="description-scene__img" src="assets/img/scene/saint-martin.avif" alt="image scène place saint-martin">
+                <span class="description-scene__text">
+                    Liste des artistes qui se représenteront ICI
+                </span>
+                <ul class="description-scene__list-artist">
+                    <li class="list-artist__wrapper">
+                        <h3 class="list-artist__name">La Cédille</h3>
+                        <img src="assets/icons/line.svg" alt="ligne de séparation des noms d'artistes"> <!-- ou <hr class="list-artist__separator"> -->
+                    </li>
+                    <li class="list-artist__wrapper">
+                        <h3 class="list-artist__name">Ozma</h3>
+                        <img src="assets/icons/line.svg" alt="ligne de séparation des noms d'artistes">
+                        <!-- ou <hr class="list-artist__separator"> -->
+                    </li>
+                    <li class="list-artist__wrapper">
+                        <h3 class="list-artist__name">Abigoba</h3>
+                        <img src="assets/icons/line.svg" alt="ligne de séparation des noms d'artistes">
+                        <!-- ou <hr class="list-artist__separator"> -->
+                    </li>
+                    <li class="list-artist__wrapper">
+                        <h3 class="list-artist__name">Minoritaire</h3>
+                        <img src="assets/icons/line.svg" alt="ligne de séparation des noms d'artistes">
+                        <!-- ou <hr class="list-artist__separator"> -->
+                    </li>
+                    <li class="list-artist__wrapper">
+                        <h3 class="list-artist__name">Borruto Family</h3>
+                    </li>
+                </ul>
             </div>
-
-            <div class="scene__list">
-                <div class="scene__card">
-                    <span class="scene__name">
-                        Place Saint-Martin
-                    </span>
-                    <a href="scene1.html">
-                        <img class="scene__img" src="assets/img/scene/saint-martin.avif" alt="image scène place saint-martin">
-                    </a>
-                </div>
-                <div class="scene__card">
-                    <span class="scene__name">
-                        Place Saint-Martin
-                    </span>
-                    <a href="scene2.html">
-                        <img class="scene__img" src="assets/img/scene/albert-thomas.avif" alt="image scène place albert-thomas">
-                    </a>
-                </div>
-                <div class="scene__card">
-                    <span class="scene__name">
-                        Place Saint-Martin
-                    </span>
-                    <a href="scene3.html">
-                        <img class="scene__img" src="assets/img/scene/denfert-rochereau.avif" alt="image scène place denfert-rochereau">
-                    </a>
-                </div>
-            </div>
-        </section>
+            
     </main>
     <footer class="footer">
         <div class="footer__newsletter">

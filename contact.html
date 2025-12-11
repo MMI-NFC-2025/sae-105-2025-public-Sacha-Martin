@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanfa'Contoise</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body style="background-color: #2D9CAF;">
+    <header class='header'>
+        <nav class="header__nav">
+            <div class='header__btn'>
+                <div class="header__btn-reseaux header__btn-reseaux-left">
+                    <a class="link-btn-header" href="">
+                        <img class="btn-insta" src="assets/icons/header/button-insta.svg" alt="bouton instagram">
+                    </a>
+                </div>
+                <div class="btn__reseaux btn-reseaux-left">
+                    <a class="link-btn-header" href="">
+                        <img class="btn-facebook" src="assets/icons/header/button-facebook.svg" alt="bouton facebook">
+                    </a>
+                </div>
+                <div class="btn-reseaux btn-reseaux-left">
+                    <a class="link-btn-header" href="">
+                        <img class="btn-tiktok" src="assets/icons/header/button-tiktok.svg" alt="bouton tiktok">
+                    </a>
+                </div>
+                <div class="btn-reseaux btn-reseaux-right">
+                    <a class="link-btn-header" href="">
+                        <img class="btn-ticket" src="assets/icons/header/button-ticket.svg" alt="bouton ticket">
+                    </a>
+                </div>
+                <div class="btn-reseaux btn-reseaux-right">
+                    <a class="link-btn-header" href="">
+                        <img class="btn-menu" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                            src="assets/icons/header/button-menu.svg" alt="bouton menu">
+                    </a>
+                </div>
+            </div>
+            <a class="logo-link" href="/">
+                <img class="logo-header" src="assets/icons/logo.svg" alt="logo fanfa'contoise">
+            </a>
+        </nav>
+
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true" hidden>
+            <div class='header__btn menu__btn'>
+                <!--on doit mettre des classes differentes pour le menu meme si le code est le meme ? -->
+                <div class="header__btn-reseaux header__btn-reseaux-left">
+                    <a class="link-btn-header" href="">
+                        <img class="btn-insta" src="assets/icons/header/button-insta.svg" alt="bouton instagram">
+                    </a>
+                </div>
+                <div class="btn__reseaux btn-reseaux-left">
+                    <a class="link-btn-header" href="">
+                        <img class="btn-facebook" src="assets/icons/header/button-facebook.svg" alt="bouton facebook">
+                    </a>
+                </div>
+                <div class="btn-reseaux btn-reseaux-left">
+                    <a class="link-btn-header" href="">
+                        <img class="btn-tiktok" src="assets/icons/header/button-tiktok.svg" alt="bouton tiktok">
+                    </a>
+                </div>
+                <div class="btn-reseaux btn-reseaux-right">
+                    <a class="link-btn-header" href="">
+                        <img class="btn-ticket" src="assets/icons/header/button-ticket.svg" alt="bouton ticket">
+                    </a>
+                </div>
+                <div class="btn-reseaux btn-reseaux-right">
+                    <a class="link-btn-header" href="">
+                        <img class="btn-menu" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                            src="assets/icons/arrow/button-cross.svg" alt="bouton quitter menu">
+                    </a>
+                </div>
+            </div>
+            <ul class="menu__list u-list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link" href="/portfolio.html">Le Programme</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/about.html">Les artistes</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/contact.html">Les scènes</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/portfolio.html">Nous contacter</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/about.html">FAQ</a>
+                </li>
+            </ul>
+            <a class="logo-link" href="/">
+                <img class="logo-header" src="assets/icons/logo.svg" alt="logo fanfa'contoise">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h1 class="hero__title">
+                Nous contacter
+            </h1>
+            <h2 class="hero__subtitle">
+                Pour nous communiquer avec nous, remplissez le formulaire ci-dessous
+            </h2>
+            <div class="swipe">
+                <h2 class="swipe__text">
+                    Découvrez le formulaire !
+                </h2>
+                <img class='swipe__arrow' src="assets/icons/arrow/fleche-bas.svg" alt="swip-up">
+            </div>
+        </div>
+        <section class="section section__contact">
+            <h2 class="section__title">
+                Formulaire de contact
+            </h2>
+            <div class="contact__wrapper">
+                <form class="contact__form">
+                    <div class="contact__firstname-wrapper">
+                        <label for="firstname" class="contact__label">Prénom</label>
+                        <input type="text" id="firstname" class="contact__input">
+                    </div>
+                    <div class="contact__lastname-wrapper">
+                        <label for="lastname" class="contact__label">Nom</label>
+                        <input type="text" id="lastname" class="contact__input">
+                    </div>
+                    <div class="contact__email-wrapper">
+                        <label for="email" class="contact__label">E-mail</label>
+                        <input type="text" id="email" class="contact__input">
+                    </div>
+                    <div class="contact__message-wrapper">
+                        <label for="message" class="contact__label">Message</label>
+                        <input type="text" id="message" class="contact__input">
+                    </div>
+                    <button class="contact__submit-btn" type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__newsletter">
+            <span class="newsletter__text">Inscrivez-vous à notre newsletter ici !</span>
+            <img class="newsletter__arrow" src="assets/icons/arrow/arrow-footer.svg" alt="fleche indiqueur newsletter">
+            <div class="newsletter__input-wrapper">
+                <input class="input-wrapper__input" type="email" placeholder="Entrez votre adresse e-mail....>">
+                <button>
+                    <img class="input-wrapper__submit" src="assets/icons/arrow/buttun-arrow.svg"
+                        alt="bouton soumettre newsletter">
+                </button>
+            </div>
+        </div>
+        <div class="footer__info">
+            <a class="info__link" href="contact.html">Contact</a>
+            <a class="info__link" href="404.html">Mentions Légales</a>
+        </div>
+        <div class="footer__partner">
+            <img class="partner__logo" src="assets/img/partners/pma.avif"
+                alt="logo pays de montbéliard agglomération blanc">
+            <img class="partner__logo" src="assets/img/partners/logo-montbéliard.avif"
+                alt="logo ville de montbéliard blanc">
+        </div>
+        <p class="info__copyright">Fanfa’comtoise © 2025 ~ Réalisation Sacha MARTIN</p>
+    </footer>
+</body>
+
+</html>
