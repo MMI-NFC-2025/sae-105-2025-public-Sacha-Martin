@@ -1,17 +1,19 @@
 .header {
   position: sticky;
   height: 151px;
+  margin-bottom: 0;
 }
 
 .header__nav {
   height: 100%;
   margin-inline:var(--space-special);
-  margin-top:var(--space-special) ;
+  margin-bottom: 0;
 }
 
 .header__btn {
   display: flex;
   justify-content: space-between;
+  padding-top: var(--space-special);
 }
 
 .btn__left {

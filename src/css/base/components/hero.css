@@ -2,13 +2,13 @@
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0), var(--color-base)),
     url("/assets/img/hero/img-hero.avif");
-  background-position: center;
   background-size: cover;
+  margin-top: 0;
   height: 598px;
 }
 
 .hero__title {
-  margin-top: 74px;
+  padding-top: 74px;
   width: 295px;
   height: 92px;
 }
@@ -31,6 +31,10 @@
 
 .swipe__arrow{
   margin: 0 auto;
-  
+}
 
+.hero__deco{
+  width: 100%;
+  position: absolute;
+  pointer-events: none;
 }
