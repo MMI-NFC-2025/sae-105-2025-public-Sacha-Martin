@@ -2,23 +2,22 @@
 :root {
   /* Mode 1 */
   /* number */
-  --text-s: 0.6875rem;  
-  --text-m: 0.8125rem;
-  --text-l: 0.9375rem;
-  --text-3xl: 1.25rem;
-  --text-2xl: 1.875rem;
-  --text-xl: 2.5rem;
+  --text-s: 0.6875rem;  /*11px*/
+  --text-m: 0.8125rem; /*13px*/
+  --text-l: 0.9375rem; /*15px*/
+  --text-xl: 1.25rem; /*20px*/
+  --text-2xl: 1.875rem; /*30px*/
+  --text-3xl: 2.5rem; /*40px*/
 }
 
 /* Spaces */
 :root {
   /* Mode 1 */
   /* number */
-  --space-card: 1.125rem;
-  --space-special: 2rem;
-  --space-basic: 2.5rem;
-  --space-left: 3.125rem;
-  --space-menu: 3.125rem;
+  --space-card: 1.125rem; /*18px*/
+  --space-special: 2rem; /*32px*/
+  --space-basic: 2.5rem; /*40px*/
+  --space-menu: 3.125rem; /*50px*/
 }
 
 /* couleur */
@@ -30,3 +29,12 @@
   --color-primary: #7bcedc;
   --color-text: #ffffff;
 }
+
+/* typographie */
+:root {
+  /* Mode 1 */
+  /* string */
+  --font-body: 'Poppins', sans-serif;
+  --font-title: 'Super Dream', cursive;
+}
+
