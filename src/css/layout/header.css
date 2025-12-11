@@ -1,1 +1,30 @@
+.header {
+  position: sticky;
+  height: 151px;
+}
 
+.header__nav {
+  height: 100%;
+  margin-inline:var(--space-special);
+  margin-block:var(--space-special) ;
+}
+
+.header__btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn__left {
+  display: flex;
+  gap: 6px;
+}
+
+.btn__right {
+  display: flex;
+  gap: 6px;
+}
+
+.logo-header {
+  justify-content: center;
+  margin-top: 36px;
+}

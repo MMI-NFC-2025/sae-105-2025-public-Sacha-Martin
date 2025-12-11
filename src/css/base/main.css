@@ -11,4 +11,35 @@ h3{
   font-family: var(--font-title);
   color: var(--color-text);
   font-weight: 400;
+  text-align: center;
+}
+
+body{
+  font-family: var(--font-body);
+}
+
+.cta{
+  display: flex;
+  margin: 0 auto;
+  gap: 6px;
+  height: 39px;
+  width: 185px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: var(--color-text);
+  border-radius: 10px ;
+  box-shadow: 0 var(--Number, -1px) var(--Number-2, 9.9px) 0 rgba(0, 0, 0, 0.86);
+}
+
+.cta__text{
+  color: var(--color-base);
+  font-weight:500px;
+  font-size: var(--text-m);
+  text-decoration: none;
+}
+
+.cta__arrow{
+  width: 8px;
+  height: 8px;
 }
