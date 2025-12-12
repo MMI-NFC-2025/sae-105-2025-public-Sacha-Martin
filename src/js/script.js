@@ -3,14 +3,14 @@ const menu = document.querySelector(".header__menu");
 const logo = document.querySelector(".logo-header");
 const nav = document.querySelector(".header__nav");
 const page = document.body;
-
+console.log(toggle, menu)
 if (toggle && menu) {
     toggle.addEventListener("click", (e) => {
         e.preventDefault();
         const isOpen = toggle.ariaExpanded === "true";
         const isClosed = !isOpen;
 
-        
+
         toggle.ariaExpanded = isClosed ? "true" : "false";
         nav.ariaExpanded = isClosed ? "true" : "false";
         menu.ariaHidden = isOpen ? "true" : "false";

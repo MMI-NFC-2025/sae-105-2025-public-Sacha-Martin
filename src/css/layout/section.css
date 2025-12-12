@@ -1,8 +1,54 @@
-.section__prog{
+.section__prog {
     margin-top: 80px;
 }
 
-.card-prog{
-    justify-content: center;
-    
+.section__title {
+    margin-bottom: 45px;
+}
+
+.card-prog__item {
+    height: 167px;
+    margin-bottom: 22px;
+}
+
+.item__img {
+    width: 295px;
+    height: 167px;
+    border-radius: 35px;
+    margin: 0 auto;
+}
+
+.item__text {
+    margin-left: 68px;
+    color: var(--color-text);
+    padding-bottom: 10px;
+    transform: translateY(-65px);
+}
+
+.img__name {
+    text-align: start;
+    color: var(--color-detail);
+    margin-bottom: 0;
+}
+
+.cta__prog {
+    margin-top: 44px;
+}
+
+.section__partners {
+    margin-top: 47px;
+}
+
+.partner-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 23px;
+}
+
+.partner__card {
+    margin: 0 auto;
+    height: 70px;
+    width: 120px;
+    background-color: var(--color-primary);
 }
