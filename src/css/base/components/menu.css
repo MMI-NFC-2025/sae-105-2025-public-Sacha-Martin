@@ -9,7 +9,7 @@
   display: flex;
   gap: 50px;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   opacity: 0;
   visibility: hidden;
@@ -40,13 +40,14 @@
 .menu__list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-left: 0;
   display: flex;
-  flex-direction: column;
-  gap: var(--space-menu);
+  gap: 30px;
 }
 
 .menu__item {
+  font-size: var(--text-2xl);
+  margin-left: var(--space-menu);
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.4s ease, transform 0.4s ease;
@@ -79,7 +80,7 @@
 
 .menu__link {
   font-size: var(--font-title);
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   color: var(--color-text);
   transition: color 0.3s ease, transform 0.2s ease;
@@ -97,6 +98,7 @@
   transform: scale(0.9);
   transition: opacity 0.4s ease, transform 0.4s ease;
   transition-delay: 0.35s;
+  margin-left: 35px;
 }
 
 .header__menu[aria-hidden="false"] .logo-header {
