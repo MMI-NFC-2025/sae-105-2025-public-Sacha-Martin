@@ -10,7 +10,9 @@
 - URL FIGMA : https://www.figma.com/design/N2GylZgmQFWugNt7sGGV3B/maquette-SAE-103?node-id=166-39&t=n20fnaSLCBMRRiku-1
 
 Intéraction : 
-    carousel + lightbox : 
+    carousel + lightbox : https://fanfacomtoise.sacha-martin.fr/artiste1
+
+    accordeon : https://fanfacomtoise.sacha-martin.fr/faq
 
 ## Sujet
 
