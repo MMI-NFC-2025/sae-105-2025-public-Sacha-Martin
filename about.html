@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notre Festival</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <script type="module" src="src/js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script type="module" src="src/js/script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
 
 <body style="background-color: #2D9CAF;">
     <header class='header' aria-hidden="false">
-        <nav class="header__nav" aria-expanded="true">
+        <nav class="header__nav" aria-expanded="false">
             <div class='header__btn'>
                 <div class="btn__left">
                     <div class="btn__reseaux header__btn-reseaux-left">
@@ -55,7 +56,7 @@
             </a>
         </nav>
 
-        <nav class="header__menu menu" id="mainNav" aria-hidden="false">
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
             <ul class="menu__list">
                 <li class="menu__item">
                     <a class="menu__link" href="/about.html">Notre Festival</a>
@@ -102,7 +103,7 @@
             </h2>
             <article class="article article__intro">
                 <p class="intro__text">
-                    La <span class="text__highlight">Fanfa’Comtoise</span>,c'est le rendez-vous musical gratuit au cœur
+                    La <span class="text__highlight">Fanfa’Comtoise</span>, c'est le rendez-vous musical gratuit au cœur
                     de Montbéliard.
                     Chaque année, le centre-ville gambade au rythme des cuivres,
                     des percussions et du jazz, dans une ambiance aussi
@@ -185,26 +186,27 @@
             <span class="newsletter__text">Inscrivez-vous à notre newsletter ici !</span>
             <img class="newsletter__arrow" src="assets/icons/arrow/arrow-footer.svg" alt="fleche indiqueur newsletter">
             <div class="newsletter__input-wrapper">
-                <input class="input-wrapper__input" type="email" placeholder="Entrez votre adresse e-mail....>">
-                <button>
+                <input class="input-wrapper__input" type="email" placeholder="Entrez votre adresse e-mail....">
+                <button class="input-wrapper__btn">
                     <img class="input-wrapper__submit" src="assets/icons/arrow/buttun-arrow.svg"
                         alt="bouton soumettre newsletter">
                 </button>
             </div>
         </div>
-        <div class="footer__info">
-            <a class="info__link" href="contact.html">Contact</a>
-            <a class="info__link" href="404.html">Mentions Légales</a>
+        <div class="footer__part2">
+            <div class="footer__info">
+                <a class="info__link" href="contact.html">Contact</a>
+                <a class="info__link" href="404.html">Mentions Légales</a>
+            </div>
+            <div class="footer__partner">
+                <img class="partner__logo" src="assets/img/partners/pma.avif"
+                    alt="logo pays de montbéliard agglomération blanc">
+                <img class="partner__logo" src="assets/img/partners/logo-montbéliard.avif"
+                    alt="logo ville de montbéliard blanc">
+            </div>
+            <p class="info__copyright">Fanfa’comtoise © 2025 ~ Réalisation Sacha MARTIN</p>
         </div>
-        <div class="footer__partner">
-            <img class="partner__logo" src="assets/img/partners/pma.avif"
-                alt="logo pays de montbéliard agglomération blanc">
-            <img class="partner__logo" src="assets/img/partners/logo-montbéliard.avif"
-                alt="logo ville de montbéliard blanc">
-        </div>
-        <p class="info__copyright">Fanfa’comtoise © 2025 ~ Réalisation Sacha MARTIN</p>
     </footer>
-    <script type="module" src="src/js/script.js"></script>
 </body>
 
 </html>

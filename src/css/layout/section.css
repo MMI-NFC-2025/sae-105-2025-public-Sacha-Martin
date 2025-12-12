@@ -1,9 +1,12 @@
-.section__prog {
+/* page index */
+
+.section {
     margin-top: 80px;
 }
 
 .section__title {
     margin-bottom: 45px;
+    max-width: 276px;
 }
 
 .card-prog__item {
@@ -52,3 +55,73 @@
     width: 120px;
     background-color: var(--color-primary);
 }
+
+.section__info {
+    height:430px;
+    margin-top:57px;
+}
+
+.info_item{
+    gap: 14px;
+}
+
+.info__btn{
+    display:flex;
+    background: none;
+    width: auto;
+    gap: 11px;
+    border:none;
+    border-bottom: 1px solid #ffffff;
+    margin-left: 40px;
+}
+
+.info__arrow{
+    height: 8,5px;
+    width: 15px;
+    object-fit: contain;
+}
+
+.info__text {
+    font-weight: 500;
+    color:var(--color-text);
+}
+
+.info__content {
+    margin-left: 59px;
+    max-width: 286px;
+    font-size: var(--text-m);
+    color:var(--color-text);
+    font-weight: 200;
+}
+
+/* page about */
+
+.article{
+    margin: 0 auto;
+    max-width:276px;
+    font-size: var(--text-m);
+    font-weight: 200;
+    color: var(--color-text);
+}
+
+/* page artiste */
+.section__artist{
+    height: 4049px;
+}
+.filters__wrapper {
+    list-style: none;
+}
+
+.artist__list{
+    margin: 0 auto;
+
+}
+.artist__card{
+    height:255px;
+    width: 332px;
+}
+.artist__img{
+    height:153px;
+    width: 291px;
+}
+

@@ -17,20 +17,31 @@ h3 {
 
 h1 {
   font-size: var(--text-3xl);
+  line-height: 46px;
 }
 
 h2 {
   font-size: var(--text-2xl);
+  line-height: 35px;
 }
 
 body {
   font-family: var(--font-body);
+  line-height: 20px;
 }
 
 .u-noscroll {
   overflow: hidden;
 }
 
+.link{
+  font-family: 700px;
+  color: var(--color-text);
+}
+
+.text__highlight{
+  font-weight: 500;
+}
 
 @keyframes swipe-down {
 
@@ -45,3 +56,4 @@ body {
     opacity: 0.8;
   }
 }
+

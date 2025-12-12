@@ -16,7 +16,7 @@
 
 <body style="background-color: #2D9CAF;">
     <header class='header' aria-hidden="false">
-        <nav class="header__nav" aria-expanded="true">
+        <nav class="header__nav" aria-expanded="false">
             <div class='header__btn'>
                 <div class="btn__left">
                     <div class="btn__reseaux header__btn-reseaux-left">
@@ -26,8 +26,7 @@
                     </div>
                     <div class="btn__reseaux btn-reseaux-left">
                         <a class="link-btn-header" href="">
-                            <img class="btn-facebook" src="assets/icons/header/button-facebook.svg"
-                                alt="bouton facebook">
+                            <img class="btn-facebook" src="assets/icons/header/button-facebook.svg" alt="bouton facebook">
                         </a>
                     </div>
                     <div class="btn__reseaux btn-reseaux-left">
@@ -54,8 +53,8 @@
                 <img class="logo-header" src="assets/icons/logo.svg" alt="logo fanfa'contoise">
             </a>
         </nav>
-
-        <nav class="header__menu menu" id="mainNav" aria-hidden="false">
+    
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
             <ul class="menu__list">
                 <li class="menu__item">
                     <a class="menu__link" href="/about.html">Notre Festival</a>
@@ -102,25 +101,23 @@
             <div class="artist__filters">
                 <ul class="filters__wrapper">
                     <li class="filters__form filter1">
-                        <input class="form__checkbox" type="checkbox" id="classique" name="music" value="classique">
+                        <input class="form__checkbox" type="checkbox" id="check1" name="music" value="classique">
                         <label class="form__label" for="classique">Vendredi 26 Juin 2026</label>
                     </li>
                     <li class="filters__form filter2">
-                        <input class="form__checkbox" type="checkbox" id="classique" name="music" value="classique">
+                        <input class="form__checkbox" type="checkbox" id="check2" name="music" value="classique">
                         <label class="form__label" for="classique">Samedi 27 Juin 2026</label>
                     </li>
                     <li class="filters__form filter3">
-                        <input class="form__checkbox" type="checkbox" id="classique" name="music" value="classique">
+                        <input class="form__checkbox" type="checkbox" id="check3" name="music" value="classique">
                         <label class="form__label" for="classique">Dimanche 28 Juin 2026</label>
                     </li>
                 </ul>
             </div>
             <div class="artist__list">
                 <div class="artist__card">
-                    <a class="artist__link" href="artiste1.html">
-                        <img class="artist_img" src="assets/img/artist/list-artist/ibrahim-maalouf.avif"
+                    <img class="artist_img" href="artiste1.html" src="assets/img/artist/list-artist/ibrahim-maalouf.avif"
                             alt="image Ibrahim Maalouf">
-                    </a>
                     <span class="artist__name">
                         Ibrahim Maalouf
                     </span>
