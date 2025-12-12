@@ -29,3 +29,23 @@ if (toggle && menu) {
         });
     });
 }
+
+// FAQ Accordion
+const questionButtons = document.querySelectorAll(".question__btn");
+
+questionButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const questionItem = button.closest(".question__item");
+        const isActive = questionItem.classList.contains("active");
+
+        // Fermer les autres éléments
+        document.querySelectorAll(".question__item.active").forEach(item => {
+            if (item !== questionItem) {
+                item.classList.remove("active");
+            }
+        });
+
+        // Basculer l'élément actif
+        questionItem.classList.toggle("active");
+    });
+});

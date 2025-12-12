@@ -57,79 +57,185 @@
 }
 
 .section__info {
-    height:430px;
-    margin-top:57px;
+    height: 430px;
+    margin-top: 57px;
 }
 
-.info_item{
+.info_item {
     gap: 14px;
 }
 
-.info__btn{
-    display:flex;
+.info__btn {
+    display: flex;
     background: none;
     width: auto;
     gap: 11px;
-    border:none;
+    border: none;
     border-bottom: 1px solid #ffffff;
     margin-left: 40px;
 }
 
-.info__arrow{
-    height: 8,5px;
+.info__arrow {
+    height: 8, 5px;
     width: 15px;
     object-fit: contain;
 }
 
 .info__text {
     font-weight: 500;
-    color:var(--color-text);
+    color: var(--color-text);
 }
 
 .info__content {
     margin-left: 59px;
     max-width: 286px;
     font-size: var(--text-m);
-    color:var(--color-text);
+    color: var(--color-text);
     font-weight: 200;
 }
 
 /* page about */
 
-.article{
+.article {
     margin: 0 auto;
-    max-width:276px;
+    max-width: 276px;
     font-size: var(--text-m);
     font-weight: 200;
     color: var(--color-text);
 }
 
 /* page artiste */
-.section__artist{
+.section__artist {
     height: 4049px;
 }
+
 .filters__wrapper {
     list-style: none;
 }
 
-.artist__list{
-  margin-left: 31px;
+.artist__list {
+    margin-left: 31px;
 }
 
-.artist__card{
-    height:255px;
+.artist__card {
+    height: 255px;
     width: 332px;
     background-color: var(--color-text);
     margin-bottom: 40px;
 }
 
-.artist__img{
-    height:153px;
+.artist__img {
+    height: 153px;
     width: 291px;
     padding-inline: 20px;
     padding-top: 22px;
 }
 
-.artist__name{
+.artist__name {
     color: var(--color-base);
+}
+
+.template__tittle {
+    font-size: var(--text-3xl);
+}
+
+.hero__back {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.hero__little-subtitle {
+    margin-left: 46px;
+    color: var(--color-text);
+    font-size: var(--text-m);
+    margin-bottom: 28px;
+}
+
+.description-artist__wrapper {
+    justify-content: center;
+}
+
+.description-artist__img {
+    width: 312px;
+    height: 213px;
+    border-radius: 30px;
+    margin-left: var(--space-basic);
+
+}
+
+.description-artist__text {
+    margin-top: 0;
+    margin-left: var(--space-basic);
+    color: var(--color-text);
+    font-weight: 200;
+    margin-left: 59px;
+    font-size: var(--text-m);
+}
+
+.carousel__title {
+    font-family: var(--font-body);
+    text-align: start;
+    margin-left: 46px;
+}
+
+
+
+.question__list {
+    margin-left: 30px;
+    max-width: 328px;
+}
+
+.question__item {
+    margin-bottom: 10px;
+}
+
+.question__btn {
+    width: 328px;
+    border: none;
+    background-color: var(--color-text);
+    border-radius: 10px;
+    text-align: left;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.question__btn:hover {
+    background-color: #f0f0f0;
+}
+
+.btn__text {
+    font-size: 12px;
+    color: var(--color-base);
+}
+
+.btn__arrow {
+    width: 15px;
+    height: 8.5px;
+    transition: transform 0.3s ease;
+}
+
+.question__item.active .btn__arrow {
+    transform: rotate(180deg);
+}
+
+.question__content {
+    font-size: 12px;
+    color: var(--color-text);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    margin-top: 0;
+}
+
+.question__item.active .question__content {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }

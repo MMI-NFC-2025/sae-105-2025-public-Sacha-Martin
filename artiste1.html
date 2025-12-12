@@ -6,101 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Scènes</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <script type="module" src="src/js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="module" src="src/js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body style="background-color: #2D9CAF;">
-    <header class='header'>
-        <nav class="header__nav">
+    <header class='header' aria-hidden="false">
+        <nav class="header__nav" aria-expanded="false">
             <div class='header__btn'>
-                <div class="header__btn-reseaux header__btn-reseaux-left">
-                    <a class="link-btn-header" href="">
-                        <img class="btn-insta" src="assets/icons/header/button-insta.svg" alt="bouton instagram">
-                    </a>
+                <div class="btn__left">
+                    <div class="btn__reseaux header__btn-reseaux-left">
+                        <a class="link-btn-header" href="">
+                            <img class="btn-insta" src="assets/icons/header/button-insta.svg" alt="bouton instagram">
+                        </a>
+                    </div>
+                    <div class="btn__reseaux btn-reseaux-left">
+                        <a class="link-btn-header" href="">
+                            <img class="btn-facebook" src="assets/icons/header/button-facebook.svg" alt="bouton facebook">
+                        </a>
+                    </div>
+                    <div class="btn__reseaux btn-reseaux-left">
+                        <a class="link-btn-header" href="">
+                            <img class="btn-tiktok" src="assets/icons/header/button-tiktok.svg" alt="bouton tiktok">
+                        </a>
+                    </div>
                 </div>
-                <div class="btn__reseaux btn-reseaux-left">
-                    <a class="link-btn-header" href="">
-                        <img class="btn-facebook" src="assets/icons/header/button-facebook.svg" alt="bouton facebook">
-                    </a>
-                </div>
-                <div class="btn-reseaux btn-reseaux-left">
-                    <a class="link-btn-header" href="">
-                        <img class="btn-tiktok" src="assets/icons/header/button-tiktok.svg" alt="bouton tiktok">
-                    </a>
-                </div>
-                <div class="btn-reseaux btn-reseaux-right">
-                    <a class="link-btn-header" href="">
-                        <img class="btn-ticket" src="assets/icons/header/button-ticket.svg" alt="bouton ticket">
-                    </a>
-                </div>
-                <div class="btn-reseaux btn-reseaux-right">
-                    <a class="link-btn-header" href="">
+                <div class="btn__right">
+                    <div class="btn__reseaux">
+                        <a class="link-btn-header" href="">
+                            <img class="btn-ticket" src="assets/icons/header/button-ticket.svg" alt="bouton ticket">
+                        </a>
+                    </div>
+                    <div class="btn__reseaux">
                         <img class="btn-menu" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                             src="assets/icons/header/button-menu.svg" alt="bouton menu">
-                    </a>
+    
+                    </div>
                 </div>
             </div>
-            <a class="logo-link" href="/">
-                <img class="logo-header" src="assets/icons/logo.svg" alt="logo fanfa'contoise">
-            </a>
+            <img class="logo-header" href="/" src="assets/icons/logo.svg" alt="logo fanfa'contoise">
         </nav>
-
-        <nav class="header__menu menu" id="mainNav" aria-hidden="true" hidden>
-            <div class='header__btn menu__btn'>
-                <div class="header__btn-reseaux header__btn-reseaux-left">
-                    <a class="link-btn-header" href="">
-                        <img class="btn-insta" src="assets/icons/header/button-insta.svg" alt="bouton instagram">
-                    </a>
-                </div>
-                <div class="btn__reseaux btn-reseaux-left">
-                    <a class="link-btn-header" href="">
-                        <img class="btn-facebook" src="assets/icons/header/button-facebook.svg" alt="bouton facebook">
-                    </a>
-                </div>
-                <div class="btn-reseaux btn-reseaux-left">
-                    <a class="link-btn-header" href="">
-                        <img class="btn-tiktok" src="assets/icons/header/button-tiktok.svg" alt="bouton tiktok">
-                    </a>
-                </div>
-                <div class="btn-reseaux btn-reseaux-right">
-                    <a class="link-btn-header" href="">
-                        <img class="btn-ticket" src="assets/icons/header/button-ticket.svg" alt="bouton ticket">
-                    </a>
-                </div>
-                <div class="btn-reseaux btn-reseaux-right">
-                    <a class="link-btn-header" href="">
-                        <img class="btn-menu" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
-                            src="assets/icons/arrow/button-cross.svg" alt="bouton quitter menu">
-                    </a>
-                </div>
-            </div>
-            <ul class="menu__list u-list-unstyled">
+    
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <ul class="menu__list">
                 <li class="menu__item">
-                    <a class="menu__link" href="/portfolio.html">Le Programme</a>
+                    <a class="menu__link" href="/about.html">Notre Festival</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/about.html">Les artistes</a>
+                    <a class="menu__link" href="/programme.html">Le Programme</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/contact.html">Les scènes</a>
+                    <a class="menu__link" href="/artiste.html">Les artistes</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/portfolio.html">Nous contacter</a>
+                    <a class="menu__link" href="/scene.html">Les scènes</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/about.html">FAQ</a>
+                    <a class="menu__link" href="/contact.html">Nous contacter</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/faq.html">FAQ</a>
                 </li>
             </ul>
-            <a class="logo-link" href="/">
-                <img class="logo-header" src="assets/icons/logo.svg" alt="logo fanfa'contoise">
-            </a>
+            <img class="logo-header" src="assets/icons/logo.svg" alt="logo fanfa'contoise">
         </nav>
     </header>
     <main>
-        <div class="hero">
+        <div class="hero__template">
             <button class="hero__back" onclick="history.back()">
                 <img class="back__arrow" src="assets/icons/arrow/arrow-back.svg" alt="bouton retour page précédente">
             </button>
-            <h1 class="hero__title">
+            <h1 class="template__title">
                 Ibrahim Maalouf
             </h1>
             <p class="hero__little-subtitle">
@@ -114,7 +95,7 @@
                     alt="image ibrahim-maalouf">
                 <div class="description-artist__text">
                     <p class="text__date">
-                        Date de naissance<br>
+                        <span class="text__highlight">Date de naissance</span><br>
                         5 Novembre 1980
                     </p>
                     <p class="text__explain">
@@ -163,26 +144,28 @@
             <span class="newsletter__text">Inscrivez-vous à notre newsletter ici !</span>
             <img class="newsletter__arrow" src="assets/icons/arrow/arrow-footer.svg" alt="fleche indiqueur newsletter">
             <div class="newsletter__input-wrapper">
-                <input class="input-wrapper__input" type="email" placeholder="Entrez votre adresse e-mail....>">
-                <button>
+                <input class="input-wrapper__input" type="email" placeholder="Entrez votre adresse e-mail....">
+                <button class="input-wrapper__btn">
                     <img class="input-wrapper__submit" src="assets/icons/arrow/buttun-arrow.svg"
                         alt="bouton soumettre newsletter">
                 </button>
             </div>
         </div>
-        <div class="footer__info">
-            <a class="info__link" href="contact.html">Contact</a>
-            <a class="info__link" href="404.html">Mentions Légales</a>
+        <div class="footer__part2">
+            <div class="footer__info">
+                <a class="info__link" href="contact.html">Contact</a>
+                <a class="info__link" href="404.html">Mentions Légales</a>
+            </div>
+            <div class="footer__partner">
+                <img class="partner__logo" src="assets/img/partners/pma.avif"
+                    alt="logo pays de montbéliard agglomération blanc">
+                <img class="partner__logo" src="assets/img/partners/logo-montbéliard.avif"
+                    alt="logo ville de montbéliard blanc">
+            </div>
+            <p class="info__copyright">Fanfa’comtoise © 2025 ~ Réalisation Sacha MARTIN</p>
         </div>
-        <div class="footer__partner">
-            <img class="partner__logo" src="assets/img/partners/pma.avif"
-                alt="logo pays de montbéliard agglomération blanc">
-            <img class="partner__logo" src="assets/img/partners/logo-montbéliard.avif"
-                alt="logo ville de montbéliard blanc">
-        </div>
-        <p class="info__copyright">Fanfa’comtoise © 2025 ~ Réalisation Sacha MARTIN</p>
     </footer>
-    <script type="module" src="src/js/script.js"></script>
+    
 </body>
 
 </html>
