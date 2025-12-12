@@ -113,15 +113,23 @@
 }
 
 .artist__list{
-    margin: 0 auto;
-
+  margin-left: 31px;
 }
+
 .artist__card{
     height:255px;
     width: 332px;
+    background-color: var(--color-text);
+    margin-bottom: 40px;
 }
+
 .artist__img{
     height:153px;
     width: 291px;
+    padding-inline: 20px;
+    padding-top: 22px;
 }
 
+.artist__name{
+    color: var(--color-base);
+}
