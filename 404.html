@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Scènes</title>
+    <title>404 - Page non trouvée | Fanfa'Contoise</title>
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script type="module" src="src/js/script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
@@ -21,31 +20,33 @@
                 <div class="btn__left">
                     <div class="btn__reseaux header__btn-reseaux-left">
                         <a class="link-btn-header" href="">
-                            <img class="btn-insta" src="assets/icons/header/button-insta.svg" alt="bouton instagram">
+                            <img class="btn-insta" src="assets/icons/header/button-insta.svg" alt="bouton instagram"
+                                aria-label="Suivez-nous sur Instagram">
                         </a>
                     </div>
                     <div class="btn__reseaux btn-reseaux-left">
                         <a class="link-btn-header" href="">
-                            <img class="btn-facebook" src="assets/icons/header/button-facebook.svg" alt="bouton facebook">
+                            <img class="btn-facebook" src="assets/icons/header/button-facebook.svg"
+                                alt="bouton facebook" aria-label="Suivez-nous sur Facebook">
                         </a>
                     </div>
                     <div class="btn__reseaux btn-reseaux-left">
                         <a class="link-btn-header" href="">
-                            <img class="btn-tiktok" src="assets/icons/header/button-tiktok.svg" alt="bouton tiktok">
+                            <img class="btn-tiktok" src="assets/icons/header/button-tiktok.svg" alt="bouton tiktok"
+                                aria-label="Suivez-nous sur TikTok">
                         </a>
                     </div>
                 </div>
                 <div class="btn__right">
                     <div class="btn__reseaux">
                         <a class="link-btn-header" href="">
-                            <img class="btn-ticket" src="assets/icons/header/button-ticket.svg" alt="bouton ticket">
+                            <img class="btn-ticket" src="assets/icons/header/button-ticket.svg" alt="bouton ticket"
+                                aria-label="Acheter des tickets">
                         </a>
                     </div>
                     <div class="btn__reseaux">
-                        <a class="link-btn-header" href="">
-                            <img class="btn-menu" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
-                                src="assets/icons/header/button-menu.svg" alt="bouton menu">
-                        </a>
+                        <img class="btn-menu" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                            src="assets/icons/header/button-menu.svg" alt="bouton menu">
                     </div>
                 </div>
             </div>
@@ -53,7 +54,7 @@
                 <img class="logo-header" src="assets/icons/logo.svg" alt="logo fanfa'contoise">
             </a>
         </nav>
-    
+
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
             <ul class="menu__list">
                 <li class="menu__item">
@@ -80,76 +81,56 @@
             </a>
         </nav>
     </header>
-    <main>
-        <div class="hero">
-            <h1 class="hero__title">
-                Les Scènes
-            </h1>
-            <h2 class="hero__subtitle">
-                Découvrez les scènes sur lesquelles les artistes vont briller !
-                <div class="swipe">
-                    <h2 class="swipe__text">
-                        Découvrez la localisation des scènes.
-                    </h2>
-                    <img class='swipe__arrow' src="assets/icons/arrow/fleche-bas.svg" alt="swip-up">
-                </div>
-        </div>
-        <section class="section section__scene">
-            <h2 class="section__title">
-                La liste des scènes
-            </h2>
 
-            <div class="scene__list">
-                <div class="scene__card">
-                    <span class="scene__name">
-                        Place Saint-Martin
-                    </span>
-                </div>
-                <div class="scene__card">
-                    <span class="scene__name">
-                        Place Saint-Martin
-                    </span>
-                    <a href="scene2.html">
-                        <img class="scene__img" src="assets/img/scene/albert-thomas.avif"
-                            alt="image scène place albert-thomas">
+    <main class="error-container">
+        <section class="error-section">
+            <div class="error-content">
+                <h1 class="error-code">404</h1>
+                <h2 class="error-title">Oups ! Page non trouvée</h2>
+                <p class="error-message">
+                    Désolé, la page que vous recherchez n'existe pas ou a été déplacée.
+                    <br>
+                    Comme un musicien qui a perdu sa note, il est temps de revenir à l'accueil !
+                </p>
+                <div class="error-buttons">
+                    <a href="/" class="error-btn error-btn-primary">
+                        Retour à l'accueil
                     </a>
-                </div>
-                <div class="scene__card">
-                    <span class="scene__name">
-                        Place Saint-Martin
-                    </span>
-                    <a href="scene3.html">
-                        <img class="scene__img" src="assets/img/scene/denfert-rochereau.avif"
-                            alt="image scène place denfert-rochereau">
+                    <a href="/index.html" class="error-btn error-btn-secondary">
+                        Voir le programme
                     </a>
                 </div>
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="footer__newsletter">
             <span class="newsletter__text">Inscrivez-vous à notre newsletter ici !</span>
             <img class="newsletter__arrow" src="assets/icons/arrow/arrow-footer.svg" alt="fleche indiqueur newsletter">
             <div class="newsletter__input-wrapper">
-                <input class="input-wrapper__input" type="email" placeholder="Entrez votre adresse e-mail....>">
-                <button>
+                <input class="input-wrapper__input" type="email" placeholder="Entrez votre adresse e-mail....">
+                <button class="input-wrapper__btn">
                     <img class="input-wrapper__submit" src="assets/icons/arrow/buttun-arrow.svg"
                         alt="bouton soumettre newsletter">
                 </button>
             </div>
         </div>
-        <div class="footer__info">
-            <a class="info__link" href="contact.html">Contact</a>
-            <a class="info__link" href="404.html">Mentions Légales</a>
+        <div class="footer__part2">
+            <div class="footer__info">
+                <a class="info__link" href="contact.html">Contact</a>
+                <a class="info__link" href="404.html">Mentions Légales</a>
+            </div>
+            <div class="footer__partner">
+                <img class="partner__logo" src="assets/img/partners/pma.avif" loading="lazy"
+                    alt="logo pays de montbéliard agglomération blanc">
+                <img class="partner__logo" src="assets/img/partners/logo-montbéliard.avif" loading="lazy"
+                    alt="logo ville de montbéliard blanc">
+            </div>
+            <p class="info__copyright">Fanfa'comtoise © 2025 ~ Réalisation Sacha MARTIN</p>
         </div>
-        <div class="footer__partner">
-            <img class="partner__logo" src="assets/img/partners/pma.avif"
-                alt="logo pays de montbéliard agglomération blanc">
-            <img class="partner__logo" src="assets/img/partners/logo-montbéliard.avif"
-                alt="logo ville de montbéliard blanc">
-        </div>
-        <p class="info__copyright">Fanfa’comtoise © 2025 ~ Réalisation Sacha MARTIN</p>
     </footer>
+
     <script type="module" src="src/js/script.js"></script>
 </body>
 

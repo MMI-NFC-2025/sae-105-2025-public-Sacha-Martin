@@ -458,6 +458,134 @@
 }
 
 .prog__show {
+    font-size: var(--text-l);
+    max-width: 286px;
+    margin-left: 54px;
     text-align: center;
-    font-size: ;
+    color: var(--color-text);
+    font-weight: 200;
+}
+
+.show__scene {
+    color: var(--color-detail);
+}
+
+/* Page 404 */
+.error-container {
+    min-height: calc(100vh - 300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-basic);
+}
+
+.error-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-basic);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.error-content {
+    flex: 0;
+    width: 100%;
+}
+
+.error-code {
+    font-size: 120px;
+    font-weight: 900;
+    color: var(--color-detail);
+    margin: 0;
+    font-family: var(--font-title);
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.error-title {
+    font-size: var(--text-3xl);
+    color: var(--color-text);
+    margin: 20px 0 10px 0;
+    font-family: var(--font-title);
+}
+
+.error-message {
+    font-size: var(--text-m);
+    color: var(--color-text);
+    margin-bottom: var(--space-basic);
+    line-height: 1.6;
+}
+
+.error-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.error-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.error-btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.error-btn-primary:hover {
+    background-color: #6ab5ca;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.error-btn-secondary {
+    background-color: var(--color-detail);
+    color: #000;
+    border: 2px solid var(--color-detail);
+}
+
+.error-btn-secondary:hover {
+    background-color: transparent;
+    color: var(--color-detail);
+    transform: translateY(-2px);
+}
+
+.error-icon {
+    display: inline-block;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* scene */
+
+.scene__card {
+    height: 225px;
+    width: 393px;
+    background-image: url(../../../assets/img/scene/saint-martin.avif);
+    background-size: cover;
+    
+}
+
+.scene__name {
+    margin-left: 85px;
+    text-align: center;
+    color: var(--color-text);
 }

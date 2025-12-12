@@ -6,8 +6,11 @@
 - NOM : Martin
 - PRÉNOM : Sacha
 - GROUPE : C1
-- URL du site :
-- URL FIGMA :
+- URL du site : http://fanfacomtoise.sacha-martin.fr/
+- URL FIGMA : https://www.figma.com/design/N2GylZgmQFWugNt7sGGV3B/maquette-SAE-103?node-id=166-39&t=n20fnaSLCBMRRiku-1
+
+Intéraction : 
+    carousel + lightbox : 
 
 ## Sujet
 
