@@ -1,4 +1,4 @@
-const toggle = document.querySelector(".menu-btn");
+const toggle = document.querySelector(".btn-menu");
 const nav = document.querySelector(".menu");
 const logo = document.querySelector(".header__logo");
 const page = document.body;
@@ -12,7 +12,5 @@ if (toggle && nav) {
     // Mise à jour des attributs ARIA pour accessibilité
     toggle.ariaExpanded = isClosed;
     nav.hidden = isOpen;
-    logo.classList.toggle("header__logo--extend", isClosed);
-    page.classList.toggle("u-noscroll", isClosed);
   });
 }
