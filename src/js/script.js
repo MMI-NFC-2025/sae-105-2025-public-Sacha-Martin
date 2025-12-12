@@ -1,16 +1,31 @@
 const toggle = document.querySelector(".btn-menu");
-const nav = document.querySelector(".menu");
-const logo = document.querySelector(".header__logo");
+const menu = document.querySelector(".header__menu");
+const logo = document.querySelector(".logo-header");
+const nav = document.querySelector(".header__nav");
 const page = document.body;
 
-// Vérifier si les éléments existent avant d'ajouter l'événement
-if (toggle && nav) {
-  toggle.addEventListener("click", () => {
-    const isOpen = toggle.ariaExpanded === "true";
-    const isClosed = !isOpen;
+if (toggle && menu) {
+    toggle.addEventListener("click", (e) => {
+        e.preventDefault();
+        const isOpen = toggle.ariaExpanded === "true";
+        const isClosed = !isOpen;
 
-    // Mise à jour des attributs ARIA pour accessibilité
-    toggle.ariaExpanded = isClosed;
-    nav.hidden = isOpen;
-  });
+        
+        toggle.ariaExpanded = isClosed ? "true" : "false";
+        nav.ariaExpanded = isClosed ? "true" : "false";
+        menu.ariaHidden = isOpen ? "true" : "false";
+        logo.classList.toggle("header__logo--extend", isClosed);
+        page.classList.toggle("u-noscroll", isClosed);
+    });
+
+    const menuLinks = menu.querySelectorAll('.menu__link');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            toggle.ariaExpanded = "false";
+            nav.ariaExpanded = "false";
+            menu.ariaHidden = "true";
+            logo.classList.remove("header__logo--extend");
+            page.classList.remove("u-noscroll");
+        });
+    });
 }

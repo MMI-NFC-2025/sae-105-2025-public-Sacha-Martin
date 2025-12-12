@@ -7,7 +7,7 @@
 
 h1,
 h2,
-h3{
+h3 {
   font-family: var(--font-title);
   color: var(--color-text);
   font-weight: 400;
@@ -15,7 +15,7 @@ h3{
   margin-inline: auto;
 }
 
-h1{
+h1 {
   font-size: var(--text-3xl);
 }
 
@@ -23,8 +23,12 @@ h2 {
   font-size: var(--text-2xl);
 }
 
-body{
+body {
   font-family: var(--font-body);
+}
+
+.u-noscroll {
+  overflow: hidden;
 }
 
 
@@ -41,4 +45,3 @@ body{
     opacity: 0.8;
   }
 }
-
