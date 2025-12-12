@@ -7,6 +7,7 @@
     <title>Les Scènes</title>
     <link rel="stylesheet" href="src/css/style.css">
     <script type="module" src="src/js/script.js"></script>
+    <script type="module" src="src/js/carousel.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script type="module" src="src/js/script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,8 @@
                     </div>
                     <div class="btn__reseaux btn-reseaux-left">
                         <a class="link-btn-header" href="">
-                            <img class="btn-facebook" src="assets/icons/header/button-facebook.svg" alt="bouton facebook">
+                            <img class="btn-facebook" src="assets/icons/header/button-facebook.svg"
+                                alt="bouton facebook">
                         </a>
                     </div>
                     <div class="btn__reseaux btn-reseaux-left">
@@ -45,13 +47,13 @@
                     <div class="btn__reseaux">
                         <img class="btn-menu" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                             src="assets/icons/header/button-menu.svg" alt="bouton menu">
-    
+
                     </div>
                 </div>
             </div>
             <img class="logo-header" href="/" src="assets/icons/logo.svg" alt="logo fanfa'contoise">
         </nav>
-    
+
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
             <ul class="menu__list">
                 <li class="menu__item">
@@ -105,14 +107,16 @@
                     </p>
                 </div>
                 <div class="description-artist__carousel">
+                    <h3 class="carousel__title">
+                        La Galeries Photo
+                    </h3>
                     <div class="carousel__wrapper" src="assets/img/artist/ibrahim-maalouf2.avif">
-                        <h3 class="carousel__title">
-                            La Galeries Photo
-                        </h3>
+
+                        <button class="carousel__button carousel__button--prev">
+                            <img src="assets/icons/arrow/flecheg.svg" alt="bouton defilement gauche galerie photo">
+                        </button>
                         <div class="carousel__galery">
-                            <button class="carousel__button">
-                                <img src="assets/icons/arrow/flecheg.svg" alt="bouton defilement gauche galerie photo">
-                            </button>
+
                             <div class="carousel__item">
                                 <img class="item__img" src="assets/img/artist/carousel/ibrahim-maalouf2.avif"
                                     alt="image ibrahim-maalouf performance 1">
@@ -129,11 +133,12 @@
                                 <img class="item__img" src="assets/img/artist/carousel/ibrahim-maalouf5.avif"
                                     alt="image ibrahim-maalouf performance 4">
                             </div>
-                            <button class="carousel__button">
-                                <img class="carousel__button" src="assets/icons/arrow/fleched.svg"
-                                    alt="bouton defilement gauche galerie photo">
-                            </button>
+
                         </div>
+                        <button class="carousel__button carousel__button--next">
+                            <img class="carousel__button" src="assets/icons/arrow/fleched.svg"
+                                alt="bouton defilement gauche galerie photo">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -165,7 +170,7 @@
             <p class="info__copyright">Fanfa’comtoise © 2025 ~ Réalisation Sacha MARTIN</p>
         </div>
     </footer>
-    
+
 </body>
 
 </html>

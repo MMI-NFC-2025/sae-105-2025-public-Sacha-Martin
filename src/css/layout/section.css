@@ -19,6 +19,99 @@
     height: 167px;
     border-radius: 35px;
     margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.item__img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox__content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox__img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.lightbox__close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    transition: transform 0.2s ease;
+}
+
+.lightbox__close:hover {
+    transform: scale(1.2);
+}
+
+.lightbox__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s ease;
+}
+
+.lightbox__button:hover {
+    transform: scale(1.2);
+}
+
+.lightbox__button-prev {
+    left: 20px;
+}
+
+.lightbox__button-next {
+    right: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .item__text {
@@ -178,6 +271,38 @@
     margin-left: 46px;
 }
 
+.carousel__galery {
+    display: flex;
+    /* Utilise flexbox pour aligner les éléments enfants - https://developer.mozilla.org/fr/docs/Web/CSS/display */
+    gap: 16px;
+    /* Espace entre les éléments enfants 16px - https://developer.mozilla.org/fr/docs/Web/CSS/gap */
+    overflow-x: scroll;
+    /* Ajoute un défilement horizontal si le contenu déborde - https://developer.mozilla.org/fr/docs/Web/CSS/overflow */
+    margin-left: 24px;
+    /* Marge négative à gauche pour coller le carousel au bord de l'écran -24px - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
+    margin-right: 24px;
+    /* Marge négative à droite pour coller le carousel au bord de l'écran -24px - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
+    scroll-snap-type: x mandatory;
+}
+
+.carousel__item {
+    flex: 1 0 256px;
+    /* L'élément prend 1 part de l'espace disponible, ne rétrécit pas, et a une largeur de base de 260px - https://developer.mozilla.org/fr/docs/Web/CSS/flex */
+    scroll-snap-align: center;
+}
+
+.carousel__button {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+
+
+.carousel__wrapper {
+    display: flex;
+
+}
 
 
 .question__list {
@@ -238,4 +363,101 @@
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
+}
+
+/* Page Contact */
+
+.section__contact {
+    padding: var(--space-basic) var(--space-special);
+    text-align: center;
+}
+
+.section__contact .section__title {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-basic);
+    max-width: 100%;
+}
+
+.contact__wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact__firstname-wrapper,
+.contact__lastname-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 2px var(--color-primary)
+}
+
+.contact__firstname-wrapper {
+    flex: 1;
+}
+
+.contact__lastname-wrapper {
+    flex: 1;
+}
+
+.contact__email-wrapper,
+.contact__message-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__label {
+    font-size: var(--text-m);
+    color: var(--color-text);
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.contact__input {
+    padding: 12px;
+    border: 2px solid var(--color-primary);
+    border-radius: 8px;
+    font-size: var(--text-m);
+    font-family: var(--font-body);
+}
+
+.contact__message-wrapper .contact__input {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact__submit-btn {
+    padding: 12px 24px;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border: none;
+    border-radius: 8px;
+    font-size: var(--text-m);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact__submit-btn:hover {
+    background-color: #6ab5ca;
+    transform: translateY(-2px);
+}
+
+
+/* programmation */
+
+.btn-download {
+    margin: 0 auto;
+    margin-bottom: 43px;
+}
+
+.prog__show {
+    text-align: center;
+    font-size: ;
 }
