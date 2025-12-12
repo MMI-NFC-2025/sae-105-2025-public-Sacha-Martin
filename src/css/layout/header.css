@@ -2,12 +2,20 @@
   position: sticky;
   height: 151px;
   margin-bottom: 0;
+
 }
 
 .header__nav {
-  height: 100%;
-  margin-inline:var(--space-special);
+  margin-inline: var(--space-special);
   margin-bottom: 0;
+  position: relative;
+  z-index: 100;
+}
+
+.header__nav[aria-expanded="true"] .logo-header {
+  opacity: 0;
+  visibility: visible;
+  height: 0;
 }
 
 .header__btn {
@@ -32,4 +40,13 @@
   aspect-ratio: 322.50/59.50;
   justify-content: center;
   margin-top: 36px;
+  overflow: hidden;
+}
+
+.menu__list {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-menu);
 }

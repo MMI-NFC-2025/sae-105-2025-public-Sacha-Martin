@@ -1,9 +1,105 @@
+.header__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-base);
+  z-index: 50;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
 
-.menu__btn {
+.header__menu[aria-hidden="false"] {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__btn-menu {
   display: flex;
   justify-content: space-between;
   padding-top: var(--space-special);
 }
-.menu[aria-hidden="true"] {
-  transform: translate(-500px);
+
+.btn__left-menu {
+  display: flex;
+  gap: 6px;
+}
+
+.btn__right-menu {
+  display: flex;
+  gap: 6px;
+}
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-menu);
+}
+
+.menu__item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.header__menu[aria-hidden="false"] .menu__item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header__menu[aria-hidden="false"] .menu__item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.header__menu[aria-hidden="false"] .menu__item:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.header__menu[aria-hidden="false"] .menu__item:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.header__menu[aria-hidden="false"] .menu__item:nth-child(4) {
+  transition-delay: 0.25s;
+}
+
+.header__menu[aria-hidden="false"] .menu__item:nth-child(5) {
+  transition-delay: 0.3s;
+}
+
+.menu__link {
+  font-size: var(--font-title);
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+  transform: translateX(10px);
+}
+
+.header__menu .logo-header {
+  margin-top: var(--space-special, 2rem);
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition-delay: 0.35s;
+}
+
+.header__menu[aria-hidden="false"] .logo-header {
+  opacity: 1;
+  transform: scale(1);
 }
