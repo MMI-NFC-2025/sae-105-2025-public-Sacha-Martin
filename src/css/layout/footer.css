@@ -39,9 +39,7 @@
 
 .newsletter__input-wrapper{
   display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
+  margin-left: 33px ;
 }
 
 .input-wrapper__input{
@@ -62,4 +60,8 @@ input::placeholder {
   background-color: rgba(255, 255, 255, 0);
   border :none;
   transform: translate(-35px);
+}
+
+.footer__info{
+  background-color: var(--color-primary);
 }
