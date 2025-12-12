@@ -62,6 +62,41 @@ input::placeholder {
   transform: translate(-35px);
 }
 
-.footer__info{
+.footer__part2{
   background-color: var(--color-primary);
+}
+
+.footer__info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 20px;
+}
+
+.info__link{
+  font-family: var(--font-body);
+  font-size: var(--text-m);
+  color: var(--color-text);
+}
+
+.footer__partner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.partner__logo{
+  padding-block: 25px;
+  width: 120px;
+  height: 70px;
+}
+
+.info__copyright{
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: var(--text-s);
+  color: var(--color-text);
+  padding-bottom: 20px;
 }
